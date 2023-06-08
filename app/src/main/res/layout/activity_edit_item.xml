@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/add_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/change_image"
+            android:src="@drawable/placeholder_image"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/change_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_image"
+            android:layout_below="@id/item_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_name"
+            android:layout_below="@id/change_image_button"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <EditText
+            android:id="@+id/change_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/name_label"
+            android:layout_below="@id/change_image_button"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="0dp"/>
+
+        <TextView
+            android:id="@+id/amount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_amount"
+            android:layout_below="@id/change_name_input"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <EditText
+            android:id="@+id/change_amount_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/amount_label"
+            android:layout_below="@id/name_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/year_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_price"
+            android:layout_below="@id/change_amount_input"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <EditText
+            android:id="@+id/change_price_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/amount_label"
+            android:layout_below="@id/amount_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/item_description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_description"
+            android:layout_below="@id/change_price_input"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+
+        <EditText
+            android:id="@+id/change_item_description_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_description_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:scrollbars="vertical"/>
+
+        <Button
+            android:id="@+id/save_changes_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_changes"
+            android:layout_below="@id/change_item_description_input"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

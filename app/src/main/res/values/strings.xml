@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pricelist</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Remove</string>
+    <string name="add_item">Add new product</string>
+    <string name="change_image">Edit Image</string>
+    <string name="change_name">Edit name</string>
+    <string name="change_amount">Edit amount</string>
+    <string name="change_price">Edit price</string>
+    <string name="change_description">Edit description</string>
+    <string name="add_name">Name</string>
+    <string name="add_amount">Amount</string>
+    <string name="add_price">Price</string>
+    <string name="add_description">Description</string>
+    <string name="add_image">Image</string>
+    <string name="name_required">Name is required</string>
+    <string name="amount_required">Amount is required</string>
+    <string name="price_required">Price is required</string>
+    <string name="save_changes">Save</string>
+    <string name="save">Save</string>
+    <string name="no_description">Description is empty</string>
+    <string name="delete_yes_no">Are you sure delete this item?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
